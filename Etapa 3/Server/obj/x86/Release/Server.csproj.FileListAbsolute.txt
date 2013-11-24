@@ -1,0 +1,14 @@
+C:\Users\Andrei\Desktop\Server\bin\Release\Datastore.mdf
+C:\Users\Andrei\Desktop\Server\bin\Release\Datastore_log.ldf
+C:\Users\Andrei\Desktop\Server\bin\Release\IpProject.exe.config
+C:\Users\Andrei\Desktop\Server\bin\Release\IpProject.exe
+C:\Users\Andrei\Desktop\Server\bin\Release\IpProject.pdb
+C:\Users\Andrei\Desktop\Server\obj\x86\Release\IpProject.exe
+C:\Users\Andrei\Desktop\Server\obj\x86\Release\IpProject.pdb
+C:\Users\_Leona_\Desktop\Calculatoare\An IV\Semestrul 1\IOC\Proiect\Etapa 3\Server\bin\Release\Datastore.mdf
+C:\Users\_Leona_\Desktop\Calculatoare\An IV\Semestrul 1\IOC\Proiect\Etapa 3\Server\bin\Release\Datastore_log.ldf
+C:\Users\_Leona_\Desktop\Calculatoare\An IV\Semestrul 1\IOC\Proiect\Etapa 3\Server\bin\Release\IpProject.exe.config
+C:\Users\_Leona_\Desktop\Calculatoare\An IV\Semestrul 1\IOC\Proiect\Etapa 3\Server\bin\Release\IpProject.exe
+C:\Users\_Leona_\Desktop\Calculatoare\An IV\Semestrul 1\IOC\Proiect\Etapa 3\Server\bin\Release\IpProject.pdb
+C:\Users\_Leona_\Desktop\Calculatoare\An IV\Semestrul 1\IOC\Proiect\Etapa 3\Server\obj\x86\Release\IpProject.exe
+C:\Users\_Leona_\Desktop\Calculatoare\An IV\Semestrul 1\IOC\Proiect\Etapa 3\Server\obj\x86\Release\IpProject.pdb

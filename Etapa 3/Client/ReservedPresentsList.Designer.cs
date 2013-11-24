@@ -65,7 +65,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);
             this.Name = "ReservedPresentsList";
-            this.Text = "Reseved Presents";
+            this.Text = "Reserved Presents";
             this.ResumeLayout(false);
 
         }

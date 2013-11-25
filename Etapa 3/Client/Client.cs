@@ -60,7 +60,7 @@ namespace Messenger
             this.id = id;
             this.group = group;
             this.name = name;
-            this.status = "Offline";
+            this.status = "";
         }
 
         public override String ToString()
@@ -262,22 +262,7 @@ namespace Messenger
             Connection conn = new Connection();
 
             handler.Receive(data, 1, 0);
-            if (data[0] == 1)
-            {
-                //file transfer
-                conn.sock = handler;
-                handler.Receive(data);
-                Parser p = new Parser(data, 0);
-                conn.id = p.getNext();
-                conn.fileName = p.getNext();
-                conn.sock.Send(new byte[] { 0 });
-
-                //open file and begin transfer
-                conn.file = new FileStream(conn.fileName, FileMode.Create);
-                conn.sock.BeginReceive(conn.buffer, 0, Connection.BufferSize, 0, new AsyncCallback(receiveFile), conn);
-                return;
-            }
-
+           
             //get id of newly connected friend
             handler.Receive(data);
 
@@ -293,7 +278,6 @@ namespace Messenger
                 {
                     f.conn = conn;
                     conn.f = f;
-                    f.status = "Available";
                     break;
                 }
 
@@ -458,16 +442,6 @@ namespace Messenger
 
                     switch (conn.buffer[0])
                     {
-                        case 0:
-
-                            //message
-                            from = p.getNext();
-                            to = p.getNext();
-                            message = p.getNext();
-
-
-                            break;
-
                         case 1:
                             //file
                             file = p.getNext();
@@ -511,7 +485,6 @@ namespace Messenger
                 }
                 else
                 {
-                    conn.f.status = "Offline";
                     connections.Remove(conn);
                 }
             }
